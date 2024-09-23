@@ -6,10 +6,7 @@ from cnnClass.utils.common import get_size
 from cnnClass.entity.config_entity import DataIngestionConfig
 from pathlib import Path
 
-
-
 class DataIngestion:
-
     def __init__(self,config=DataIngestionConfig):
         self.config=config
 
@@ -22,7 +19,6 @@ class DataIngestion:
             logger.info(f"{filename} downloaded! header :\n{headers}")
         else:
             logger.info(f"File already exists : {get_size(Path(self.config.local_data_file))}")
-
     
     def extract_zip_file(self):
         """
