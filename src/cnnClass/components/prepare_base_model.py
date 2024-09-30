@@ -6,6 +6,8 @@ from cnnClass.entity.config_entity import PrepareBaseModelConfig
 from pathlib import Path
 
 
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
+
 class PrepareBaseModel:
     def __init__(self, config: PrepareBaseModelConfig):
         self.config = config
