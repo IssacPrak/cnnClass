@@ -11,3 +11,14 @@
 8. Update the main.py
 9. Update the dvc.yaml
 
+
+
+Config
+secret
+param
+entity
+config
+compo
+pipeline
+main
+dvc
