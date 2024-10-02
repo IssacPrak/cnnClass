@@ -22,3 +22,17 @@ compo
 pipeline
 main
 dvc
+
+
+
+##
+
+tensorbaord to watch model information
+tensorboard --logdir artifacts/prepare_callbacks/tensorboard_log_dir/
+This will open in port 6060
+
+dvc 
+dvc init -- for intialization
+dvc repro that will run all the steps in pipeline
+
+python app.py  - flask app running in 8080
